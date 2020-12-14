@@ -45,6 +45,12 @@ a {
 .navigation {
   color: var(--main-text-color);
   line-height: 1.14;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.navigation > a:visited {
+  color: var(--main-text-color);
 }
 
 .navigation-link:hover,
