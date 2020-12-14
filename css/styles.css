@@ -48,7 +48,8 @@ a {
   letter-spacing: 0.02em;
 }
 
-.navigation-link {
+.navigation-link,
+.navigation-link:visited {
   color: var(--main-text-color);
 }
 
