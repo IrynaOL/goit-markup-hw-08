@@ -16,26 +16,32 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header portfolio-header">
       <div class="container">
-        <nav>
-          <a href="./index.html" class="logo">
-            <span class="logo-style">Web</span>Studio</a
+        <nav class="site-nav">
+          <a href="./index.html" class="logo"
+            ><span class="logo-style">Web</span>Studio</a
           >
           <ul class="navigation">
-            <li><a href="./index.html" class="navigation-link">Студия</a></li>
-            <li><a href="" class="navigation-link current">Портфолио</a></li>
-            <li><a href="" class="navigation-link">Контакты</a></li>
+            <li class="nav-link">
+              <a href="./index.html" class="navigation-link">Студия</a>
+            </li>
+            <li class="nav-link">
+              <a href="" class="navigation-link current">Портфолио</a>
+            </li>
+            <li class="nav-link">
+              <a href="" class="navigation-link">Контакты</a>
+            </li>
           </ul>
         </nav>
 
         <ul class="contact">
-          <li>
+          <li class="nav-link">
             <a href="mailto:info@devstudio.com" class="contact-link"
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="nav-link">
             <a href="tel:+380961111111" class="contact-link"
               >+38 096 111 11 11</a
             >
@@ -45,31 +51,33 @@
     </header>
 
     <main>
-      <section>
+      <section class="work-examples">
         <div class="container">
-          <!-- h1 Примеры наших работ -->
           <!-- Фильтры -->
           <ul class="filter">
-            <li>
+            <li class="filter-item">
               <button type="button" class="filter-button current">Все</button>
             </li>
-            <li>
+            <li class="filter-item">
               <button type="button" class="filter-button">Веб-сайты</button>
             </li>
-            <li>
+            <li class="filter-item">
               <button type="button" class="filter-button">Приложения</button>
             </li>
-            <li><button type="button" class="filter-button">Дизайн</button></li>
-            <li>
+            <li class="filter-item">
+              <button type="button" class="filter-button">Дизайн</button>
+            </li>
+            <li class="filter-item">
               <button type="button" class="filter-button">Маркетинг</button>
             </li>
           </ul>
 
           <!-- Карточки работ -->
           <ul class="example">
-            <li>
+            <li class="example-item">
               <a href="">
                 <img
+                  class="example-image"
                   src="./images/технокряк.png"
                   alt="Экран компьютера"
                   width="370"
@@ -78,7 +86,7 @@
                 <p class="description">Веб-сайт</p>
               </a>
             </li>
-            <li>
+            <li class="example-item">
               <a href="">
                 <img
                   src="./images/постер.png"
@@ -89,7 +97,7 @@
                 <p class="description">Дизайн</p>
               </a>
             </li>
-            <li>
+            <li class="example-item">
               <a href="">
                 <img
                   src="./images/ресторан.png"
@@ -100,9 +108,10 @@
                 <p class="description">Приложение</p>
               </a>
             </li>
-            <li>
+            <li class="example-item">
               <a href="">
                 <img
+                  class="example-image"
                   src="./images/проект-prime.png"
                   alt="Наушники"
                   width="370"
@@ -111,9 +120,10 @@
                 <p class="description">Маркетинг</p>
               </a>
             </li>
-            <li>
+            <li class="example-item">
               <a href="">
                 <img
+                  class="example-image"
                   src="./images/проект-boxes.png"
                   alt="Две коробки"
                   width="370"
@@ -122,30 +132,46 @@
                 <p class="description">Приложение</p>
               </a>
             </li>
-            <li>
+            <li class="example-item">
               <a href="">
-                <img src="./images/inspiration.png" alt="Монитор" width="370" />
+                <img
+                  class="example-image"
+                  src="./images/inspiration.png"
+                  alt="Монитор"
+                  width="370"
+                />
                 <h2 class="title">Inspiration has no Borders</h2>
                 <p class="description">Веб-сайт</p>
               </a>
             </li>
-            <li>
+            <li class="example-item">
               <a href="">
-                <img src="./images/издание.png" alt="Журнал" width="370" />
+                <img
+                  class="example-image"
+                  src="./images/издание.png"
+                  alt="Журнал"
+                  width="370"
+                />
                 <h2 class="title">Издание Limited Edition</h2>
                 <p class="description">Дизайн</p>
               </a>
             </li>
-            <li>
+            <li class="example-item">
               <a href="">
-                <img src="./images/проект-lab.png" alt="Этикетка" width="370" />
+                <img
+                  class="example-image"
+                  src="./images/проект-lab.png"
+                  alt="Этикетка"
+                  width="370"
+                />
                 <h2 class="title">Проект LAB</h2>
                 <p class="description">Маркетинг</p>
               </a>
             </li>
-            <li>
+            <li class="example-item">
               <a href="">
                 <img
+                  class="example-image"
                   src="./images/growing-business.png"
                   alt="Рука печатает на
               ноутбуке"
@@ -163,12 +189,12 @@
     <footer class="footer">
       <div class="container">
         <a href="./index.html" class="logo">
-          <span class="logo-style">Web</span>Studio</a
-        >
+          <span class="logo-style">Web</span>Studio
+        </a>
         <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
         <ul class="contact-footer">
-          <li>info@example.com</li>
-          <li>+38 099 111 11 11</li>
+          <li class="tel-link">info@example.com</li>
+          <li class="mail-link">+38 099 111 11 11</li>
         </ul>
       </div>
     </footer>

@@ -57,6 +57,10 @@ p {
   display: flex;
 }
 
+.header {
+  border: 1px solid #ececec;
+}
+
 .site-nav {
   display: flex;
   flex-direction: row;
@@ -355,15 +359,36 @@ p {
 
 /* portfolio.htm main */
 /* Фильтры */
+.portfolio-header {
+  margin-bottom: 94px;
+}
+
 .filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+
   font-weight: 500;
   line-height: 1.62;
   text-align: center;
 }
 
+.filter-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .filter-button {
+  border-radius: 4px;
+  padding: 6px 22px;
+
+  line-height: 1.62;
+  font-weight: 500;
+  font-size: 16px;
+  border-color: #f5f4fa;
   color: var(--main-text-color);
   background-color: #f5f4fa;
+  text-align: center;
+  cursor: pointer;
 }
 
 .filter-button:hover,
@@ -377,8 +402,33 @@ p {
   color: #ffffff;
 }
 
+.example {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 94px;
+}
+
+.example-item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.example-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.example-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.example-image {
+  margin-bottom: 20px;
+}
+
 /* Карточки работ */
 .example .title {
+  margin-bottom: 4px;
+
   color: var(--main-text-color);
   font-weight: 700;
   font-size: 18px;
