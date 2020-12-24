@@ -153,12 +153,11 @@ p {
   background-color: var(--secondary-background-color);
   text-align: center;
   height: 600px;
-  margin-bottom: 94px;
+  padding-top: 200px;
 }
 
 .hero-title {
   margin-bottom: 30px;
-  padding-top: 200px;
 
   color: #ffffff;
   font-weight: 900;
@@ -186,7 +185,8 @@ p {
 
 /* Наши преимущества */
 .advantages {
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .advantages h2 {
@@ -228,7 +228,7 @@ p {
 /* Чем мы занимаемся */
 
 .work {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .title-html {
@@ -251,11 +251,11 @@ p {
 /* Наша команда */
 .team {
   background-color: var(--additional-background-color);
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .team .title-html {
-  padding-top: 94px;
   margin-bottom: 50px;
 }
 
@@ -356,8 +356,10 @@ p {
 
 /* portfolio.htm main */
 /* Фильтры */
-.portfolio-header {
-  margin-bottom: 94px;
+
+.work-examples {
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .filter {
@@ -403,7 +405,6 @@ p {
 .example {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 94px;
 }
 
 .example-item {
