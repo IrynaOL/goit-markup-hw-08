@@ -163,10 +163,24 @@ p {
 /* index.htm main */
 /* Герой */
 .hero {
-  background-color: var(--secondary-background-color);
+  background-color: #c4c4c4;
   text-align: center;
   height: 600px;
+  padding-top: 0;
+}
+
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
   padding-top: 200px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/header-background-image.jpg);
+  background-position: center;
 }
 
 .hero-title {
