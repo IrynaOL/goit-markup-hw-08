@@ -240,6 +240,18 @@ p {
   margin-bottom: 10px;
 }
 
+.advantages-icon {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  justify-content: center;
+}
+
+.advantages-icon .icon {
+  width: 70px;
+}
+
 .advantages .description {
   color: var(--secondary-text-color);
   line-height: 1.71;
@@ -326,16 +338,28 @@ p {
 }
 
 .social-links .link {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
-
-  width: 44px;
-  height: 44px;
+  margin: 0;
+  padding: 0;
 }
 
-.link > .link-adress {
+.link-adress {
+  display: flex;
+  align-items: center;
   justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  margin: 0;
+  color: #afb1b8;
+}
+
+.link-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 
 .social-links .link:not(:last-child) {
@@ -344,6 +368,60 @@ p {
 
 .link-adress {
   cursor: pointer;
+}
+
+.link-adress:hover,
+.link-adress:focus {
+  color: var(--main-background-color);
+  background-color: var(--accent-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0, 25));
+}
+
+/* Наши клиенты */
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients .title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.client-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: #afb1b8;
+}
+
+.client-link:hover,
+.client-link:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.client-logo {
+  fill: currentColor;
+}
+
+.client-type:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* Footer */
