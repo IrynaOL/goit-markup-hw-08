@@ -148,15 +148,11 @@ p {
 }
 
 .icon-email {
-  width: 16px;
-  height: 12px;
   fill: currentColor;
   margin-right: 10px;
 }
 
 .icon-phone {
-  width: 10px;
-  height: 16px;
   fill: currentColor;
   margin-right: 10px;
 }
