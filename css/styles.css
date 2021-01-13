@@ -460,7 +460,6 @@ p {
 .container-foot {
   display: flex;
   flex-direction: row;
-  padding-left: 215px;
   align-items: baseline;
 }
 
