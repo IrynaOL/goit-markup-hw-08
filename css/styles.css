@@ -5,6 +5,9 @@
   --accent-color: #2196f3;
   --main-text-color: #212121;
   --secondary-text-color: #757575;
+
+  --animation-duration: 250ms;
+  --animation-type: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -103,6 +106,8 @@ p {
   position: relative;
   padding-top: 32px;
   padding-bottom: 32px;
+
+  transition: color var(--animation-duration) var(--animation-type);
 }
 
 .navigation-link::after {
@@ -117,6 +122,8 @@ p {
   border-radius: 2px;
   background-color: var(--accent-color);
   opacity: 0;
+
+  transition: opacity var(--animation-duration) var(--animation-type);
 }
 
 .current-link.navigation-link::after,
@@ -154,6 +161,7 @@ p {
 .contact-link:hover,
 .contact-link:focus {
   color: var(--accent-color);
+  transition: color var(--animation-duration) var(--animation-type);
 }
 
 .contact {
@@ -217,6 +225,7 @@ p {
   padding: 10px 32px;
   min-width: 200px;
   border: none;
+  cursor: pointer;
 
   font-size: 16px;
   font-weight: 700;
@@ -302,6 +311,34 @@ p {
 
 .work-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.work-container {
+  position: relative;
+}
+
+.work-description {
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.work-image {
+  display: block;
+}
+
+.work-description .title {
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-align: center;
+
+  padding: 27px 0;
+
+  color: #ffffff;
 }
 
 /* Наша команда */
@@ -394,6 +431,9 @@ p {
   color: var(--main-background-color);
   background-color: var(--accent-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0, 25));
+
+  transition: background-color var(--animation-duration) var(--animation-type),
+    color var(--animation-duration) var(--animation-type);
 }
 
 /* Наши клиенты */
@@ -433,6 +473,8 @@ p {
 .client-link:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
+  transition: color var(--animation-duration) var(--animation-type),
+    border-color var(--animation-duration) var(--animation-type);
 }
 
 .client-logo {
@@ -518,6 +560,7 @@ p {
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-color);
+  transition: background-color var(--animation-duration) var(--animation-type);
 }
 
 .social-icon {
