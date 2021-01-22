@@ -614,6 +614,8 @@ p {
 .filter-button:focus {
   background-color: var(--accent-color);
   color: #ffffff;
+  transition: color var(--animation-duration) var(--animation-type),
+    background-color var(--animation-duration) var(--animation-type);
 }
 
 .filter .filter-button.current {
@@ -661,9 +663,88 @@ p {
   line-height: 1.87;
 }
 
-.example-item a:hover,
-.example-item a:focus {
+.example-link:hover,
+.example-link:focus {
   display: block;
+  cursor: pointer;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.example-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform var(--animation-duration) var(--animation-type);
+}
+
+.overlay-text p {
+  font-size: 18px;
+  line-height: 1.56;
+  color: #ffffff;
+}
+
+.example-link:hover .overlay-text,
+.example-link:focus .overlay-text {
+  transform: translateY(0);
+}
+
+/* Модальное окно */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity var(--animation-duration) var(--animation-type);
+}
+
+.modal {
+  position: absolute;
+  width: 528px;
+  height: 581px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  background-color: #ffffff;
+  transition: transform var(--animation-duration) var(--animation-type);
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.9);
+}
+
+.modal button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
 }
