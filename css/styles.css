@@ -219,7 +219,7 @@ p {
   text-transform: uppercase;
 }
 
-.button {
+.hero-button {
   display: inline-block;
   border-radius: 4px;
   padding: 10px 32px;
@@ -530,6 +530,10 @@ p {
   margin-right: 70px;
 }
 
+.social-footer {
+  margin-right: 93px;
+}
+
 .social-title {
   font-weight: 700;
   line-height: 16px;
@@ -571,6 +575,66 @@ p {
 
 .social-list .item:not(:last-child) {
   margin-right: 10px;
+}
+
+/* Подпишись на рассылку */
+.form-container {
+  margin-left: auto;
+}
+
+.form input {
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: var(--secondary-background-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+.form input:focus {
+  outline: none;
+  color: #ffffff;
+}
+
+.form input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  color: color: rgba(255, 255, 255, 0.6);;
+}
+
+.form-elements {
+  display: flex;
+}
+
+.submit-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 200px;
+  height: 50px;
+
+  margin-left: 12px;
+
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.submit-button:focus {
+  outline: none;
+}
+
+.form-icon {
+  margin-left: 10px;
 }
 
 /* portfolio.htm main */
