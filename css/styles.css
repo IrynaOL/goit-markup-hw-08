@@ -582,7 +582,7 @@ p {
   margin-left: auto;
 }
 
-.form input {
+.form-input {
   width: 358px;
   height: 50px;
   padding-left: 16px;
@@ -598,7 +598,7 @@ p {
   color: #ffffff;
 }
 
-.form input::placeholder {
+.form-input::placeholder {
   font-size: 16px;
   line-height: 1.25;
   color: color: rgba(255, 255, 255, 0.6);;
@@ -609,6 +609,7 @@ p {
 }
 
 .submit-button {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -633,7 +634,7 @@ p {
   outline: none;
 }
 
-.form-icon {
+.form-icon-footer {
   margin-left: 10px;
 }
 
@@ -781,6 +782,7 @@ p {
   position: absolute;
   width: 528px;
   height: 581px;
+  padding: 40px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -796,7 +798,17 @@ p {
   transform: translate(-50%, -50%) scale(0.9);
 }
 
-.modal button {
+.modal-title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--main-text-color);
+
+  margin-bottom: 12px;
+}
+
+.modal-button {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -811,4 +823,154 @@ p {
 .is-hidden {
   opacity: 0;
   pointer-events: none;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-field {
+  position: relative;
+}
+
+.form-name {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--secondary-text-color);
+
+  margin-bottom: 4px;
+}
+
+.input {
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  padding: 11px 12px;
+  padding-left: 42px;
+  transition: border-color var(--animation-duration) var(--animation-type);
+}
+
+.input:hover,
+.input:focus {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+  outline: none;
+}
+
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  fill: currentColor;
+  transition: color var(--animation-duration) var(--animation-type);
+}
+
+.input:hover + .form-icon, .input:focus + .form-icon {
+  color: var(--accent-color);
+}
+
+.form-comment {
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  resize: none;
+  outline: none;
+
+  transition: border-color var(--animation-duration) var(--animation-type);
+}
+
+.form-comment::placeholder {
+  font-size: 14px;
+  line-height: 0.87;
+  letter-spacing: 0.01em;
+  color: color: rgba(117, 117, 117, 0.5);;
+}
+
+.form-comment:hover,
+.form-comment:focus {
+  border-color: var(--accent-color);
+}
+
+.form-label.comment {
+  margin-bottom: 20px;
+}
+
+.conditions {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.conditions-label {
+  display: flex;
+  align-items: center;
+}
+
+.old-checkbox {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.new-checkbox {
+  display: inline-block;
+  cursor: pointer;
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--main-text-color);
+  border-radius: 2px;
+  margin-right: 10px;
+  transition: background-image var(--animation-duration) var(--animation-type), border-color var(--animation-duration) var(--animation-type);
+}
+
+.old-checkbox:checked + .new-checkbox {
+  border-color: var(--accent-color);
+  background-image: url('../images/checkmark-icon.svg');
+  background-size: contain;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+}
+
+.checkbox-text {
+  line-height: 1.71;
+  color: var(--secondary-text-color);
+}
+
+.checkbox-link {
+  text-decoration: underline;
+  color: var(--accent-color);
+}
+
+.form-button {
+  padding: 10px 55px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  background-color: var(--accent-color);
+  margin: auto;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
