@@ -601,7 +601,7 @@ p {
 .form-input::placeholder {
   font-size: 16px;
   line-height: 1.25;
-  color: color: rgba(255, 255, 255, 0.6);;
+  color: rgba(255, 255, 255, 0.6);;
 }
 
 .form-elements {
