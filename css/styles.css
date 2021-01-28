@@ -601,7 +601,7 @@ p {
 .form-input::placeholder {
   font-size: 16px;
   line-height: 1.25;
-  color: rgba(255, 255, 255, 0.6);;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .form-elements {
@@ -619,7 +619,7 @@ p {
 
   margin-left: 12px;
 
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
@@ -871,7 +871,8 @@ p {
   transition: color var(--animation-duration) var(--animation-type);
 }
 
-.input:hover + .form-icon, .input:focus + .form-icon {
+.input:hover + .form-icon,
+.input:focus + .form-icon {
   color: var(--accent-color);
 }
 
@@ -889,10 +890,10 @@ p {
 }
 
 .form-comment::placeholder {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 0.87;
   letter-spacing: 0.01em;
-  color: color: rgba(117, 117, 117, 0.5);;
+  color: rgba(0, 0, 0, 0.2);
 }
 
 .form-comment:hover,
@@ -935,12 +936,13 @@ p {
   border: 2px solid var(--main-text-color);
   border-radius: 2px;
   margin-right: 10px;
-  transition: background-image var(--animation-duration) var(--animation-type), border-color var(--animation-duration) var(--animation-type);
+  transition: background-image var(--animation-duration) var(--animation-type),
+    border-color var(--animation-duration) var(--animation-type);
 }
 
 .old-checkbox:checked + .new-checkbox {
   border-color: var(--accent-color);
-  background-image: url('../images/checkmark-icon.svg');
+  background-image: url("../images/checkmark-icon.svg");
   background-size: contain;
   background-origin: border-box;
   background-repeat: no-repeat;
