@@ -809,7 +809,11 @@ p {
 }
 
 .modal-button {
+  cursor: pointer;
   position: absolute;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   top: 8px;
   right: 8px;
   width: 30px;
@@ -818,6 +822,16 @@ p {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: #ffffff;
+}
+
+.modal-icon {
+  fill: currentColor;
+  transition: color var(--animation-duration) var(--animation-type);
+}
+
+.modal-icon:hover,
+.modal-icon:focus {
+  color: var(--accent-color);
 }
 
 .is-hidden {
@@ -941,7 +955,7 @@ p {
 }
 
 .old-checkbox:checked + .new-checkbox {
-  border-color: var(--accent-color);
+  border: none;
   background-image: url("../images/checkmark-icon.svg");
   background-size: contain;
   background-origin: border-box;
