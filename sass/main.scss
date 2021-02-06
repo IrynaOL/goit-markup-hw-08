@@ -1,18 +1,8 @@
-:root {
-  --main-background-color: #ffffff;
-  --secondary-background-color: #2f303a;
-  --additional-background-color: #f5f4fa;
-  --accent-color: #2196f3;
-  --main-text-color: #212121;
-  --secondary-text-color: #757575;
-
-  --animation-duration: 250ms;
-  --animation-type: cubic-bezier(0.4, 0, 0.2, 1);
-}
+@import "utils/variables";
 
 body {
-  font-family: "Roboto", sans-serif;
-  background-color: var(--main-background-color);
+  font-family: $main-font-family;
+  background-color: $main-background-color;
   font-size: 14px;
   font-weight: normal;
   letter-spacing: 0.03em;
@@ -72,12 +62,12 @@ p {
 
 /* Logo */
 .logo {
-  font-family: "Raleway", sans-serif;
+  font-family: $sec-font-family;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  color: var(--main-text-color);
+  color: $main-text-color;
 }
 
 .site-nav .logo {
@@ -107,7 +97,7 @@ p {
   padding-top: 32px;
   padding-bottom: 32px;
 
-  transition: color var(--animation-duration) var(--animation-type);
+  transition: color $animation-duration $animation-type;
 }
 
 .navigation-link::after {
@@ -120,10 +110,10 @@ p {
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   opacity: 0;
 
-  transition: opacity var(--animation-duration) var(--animation-type);
+  transition: opacity $animation-duration $animation-type;
 }
 
 .current-link.navigation-link::after,
@@ -134,16 +124,16 @@ p {
 
 .navigation-link,
 .navigation-link:visited {
-  color: var(--main-text-color);
+  color: $main-text-color;
 }
 
 .navigation-link:hover,
 .navigation-link:focus {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .navigation .navigation-link.current-link {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 /* Contacts */
@@ -152,7 +142,7 @@ p {
   padding-top: 32px;
   padding-bottom: 32px;
 
-  color: var(--secondary-text-color);
+  color: $secondary-text-color;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -160,8 +150,8 @@ p {
 
 .contact-link:hover,
 .contact-link:focus {
-  color: var(--accent-color);
-  transition: color var(--animation-duration) var(--animation-type);
+  color: $accent-color;
+  transition: color $animation-duration $animation-type;
 }
 
 .contact {
@@ -232,7 +222,7 @@ p {
   font-size: 16px;
   font-weight: 700;
   color: #ffffff;
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   line-height: 1.87;
   letter-spacing: 0.06em;
   text-align: center;
@@ -281,7 +271,7 @@ p {
 }
 
 .advantages .description {
-  color: var(--secondary-text-color);
+  color: $secondary-text-color;
   line-height: 1.71;
 }
 
@@ -346,7 +336,7 @@ p {
 
 /* Наша команда */
 .team {
-  background-color: var(--additional-background-color);
+  background-color: $additional-background-color;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -360,7 +350,7 @@ p {
 }
 
 .team-card {
-  background-color: var(--main-background-color);
+  background-color: $main-background-color;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -384,7 +374,7 @@ p {
 
 .team-description {
   margin-bottom: 16px;
-  color: var(--secondary-text-color);
+  color: $secondary-text-color;
   line-height: 1.18;
   text-align: center;
 }
@@ -431,12 +421,12 @@ p {
 
 .link-adress:hover,
 .link-adress:focus {
-  color: var(--main-background-color);
-  background-color: var(--accent-color);
+  color: $main-background-color;
+  background-color: $accent-color;
   filter: drop-shadow(0px 4px 4px RGBA(0, 0, 0, 0.25));
 
-  transition: background-color var(--animation-duration) var(--animation-type),
-    color var(--animation-duration) var(--animation-type);
+  transition: background-color $animation-duration $animation-type,
+    color $animation-duration $animation-type;
 }
 
 /* Наши клиенты */
@@ -465,10 +455,10 @@ p {
 
 .client:hover,
 .client:focus {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
-  transition: color var(--animation-duration) var(--animation-type),
-    border-color var(--animation-duration) var(--animation-type);
+  color: $accent-color;
+  border-color: $accent-color;
+  transition: color $animation-duration $animation-type,
+    border-color $animation-duration $animation-type;
 }
 
 .client-logo {
@@ -481,7 +471,7 @@ p {
 
 /* Footer */
 .footer {
-  background-color: var(--secondary-background-color);
+  background-color: $secondary-background-color;
   padding-bottom: 60px;
   padding-top: 60px;
 }
@@ -557,8 +547,8 @@ p {
 
 .social-link:hover,
 .social-link:focus {
-  background-color: var(--accent-color);
-  transition: background-color var(--animation-duration) var(--animation-type);
+  background-color: $accent-color;
+  transition: background-color $animation-duration $animation-type;
 }
 
 .social-icon {
@@ -583,7 +573,7 @@ p {
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  background-color: var(--secondary-background-color);
+  background-color: $secondary-background-color;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
@@ -618,7 +608,7 @@ p {
   font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   border: none;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -629,6 +619,7 @@ p {
 }
 
 .form-icon-footer {
+  fill: #ffffff;
   margin-left: 10px;
 }
 
@@ -663,7 +654,7 @@ p {
   line-height: 1.62;
   font-weight: 500;
   font-size: 16px;
-  color: var(--main-text-color);
+  color: $main-text-color;
   background-color: #f5f4fa;
   text-align: center;
   cursor: pointer;
@@ -671,14 +662,14 @@ p {
 
 .filter-button:hover,
 .filter-button:focus {
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   color: #ffffff;
-  transition: color var(--animation-duration) var(--animation-type),
-    background-color var(--animation-duration) var(--animation-type);
+  transition: color $animation-duration $animation-type,
+    background-color $animation-duration $animation-type;
 }
 
 .filter .filter-button.current {
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   color: #ffffff;
 }
 
@@ -710,7 +701,7 @@ p {
 .example-title {
   margin-bottom: 4px;
 
-  color: var(--main-text-color);
+  color: $main-text-color;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -718,7 +709,7 @@ p {
 }
 
 .example-description {
-  color: var(--secondary-text-color);
+  color: $secondary-text-color;
   line-height: 1.87;
 }
 
@@ -745,7 +736,7 @@ p {
 
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
-  transition: transform var(--animation-duration) var(--animation-type);
+  transition: transform $animation-duration $animation-type;
 }
 
 .overlay-text p {
@@ -769,7 +760,7 @@ p {
 
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity var(--animation-duration) var(--animation-type);
+  transition: opacity $animation-duration $animation-type;
 }
 
 .modal {
@@ -785,7 +776,7 @@ p {
   border-radius: 4px;
 
   background-color: #ffffff;
-  transition: transform var(--animation-duration) var(--animation-type);
+  transition: transform $animation-duration $animation-type;
 }
 
 .backdrop.is-hidden .modal {
@@ -797,7 +788,7 @@ p {
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
-  color: var(--main-text-color);
+  color: $main-text-color;
 
   margin-bottom: 12px;
 }
@@ -820,12 +811,12 @@ p {
 
 .modal-icon {
   fill: currentColor;
-  transition: color var(--animation-duration) var(--animation-type);
+  transition: color $animation-duration $animation-type;
 }
 
 .modal-icon:hover,
 .modal-icon:focus {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .is-hidden {
@@ -847,7 +838,7 @@ p {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-  color: var(--secondary-text-color);
+  color: $secondary-text-color;
 
   margin-bottom: 4px;
 }
@@ -860,13 +851,13 @@ p {
 
   padding: 11px 12px;
   padding-left: 42px;
-  transition: border-color var(--animation-duration) var(--animation-type);
+  transition: border-color $animation-duration $animation-type;
 }
 
 .input:hover,
 .input:focus {
-  border-color: var(--accent-color);
-  color: var(--accent-color);
+  border-color: $accent-color;
+  color: $accent-color;
   outline: none;
 }
 
@@ -876,12 +867,12 @@ p {
   left: 12px;
   transform: translateY(-50%);
   fill: currentColor;
-  transition: color var(--animation-duration) var(--animation-type);
+  transition: color $animation-duration $animation-type;
 }
 
 .input:hover + .form-icon,
 .input:focus + .form-icon {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .form-comment {
@@ -894,7 +885,7 @@ p {
   resize: none;
   outline: none;
 
-  transition: border-color var(--animation-duration) var(--animation-type);
+  transition: border-color $animation-duration $animation-type;
 }
 
 .form-comment::placeholder {
@@ -906,7 +897,7 @@ p {
 
 .form-comment:hover,
 .form-comment:focus {
-  border-color: var(--accent-color);
+  border-color: $accent-color;
 }
 
 .form-label.comment {
@@ -941,11 +932,11 @@ p {
   display: inline-block;
   width: 16px;
   height: 15px;
-  border: 2px solid var(--main-text-color);
+  border: 2px solid $main-text-color;
   border-radius: 2px;
   margin-right: 10px;
-  transition: background-image var(--animation-duration) var(--animation-type),
-    border-color var(--animation-duration) var(--animation-type);
+  transition: background-image $animation-duration $animation-type,
+    border-color $animation-duration $animation-type;
 }
 
 .old-checkbox:checked + .new-checkbox {
@@ -958,12 +949,12 @@ p {
 
 .checkbox-text {
   line-height: 1.71;
-  color: var(--secondary-text-color);
+  color: $secondary-text-color;
 }
 
 .checkbox-link {
   text-decoration: underline;
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .form-button {
@@ -978,7 +969,7 @@ p {
   align-items: center;
   text-align: center;
 
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   margin: auto;
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
