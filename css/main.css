@@ -111,7 +111,7 @@ p {
   letter-spacing: 0.02em;
 }
 
-.navigation > .nav-link:not(:last-child) {
+.navigation > .navigation-container:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -186,11 +186,17 @@ p {
       -ms-flex-direction: row;
           flex-direction: row;
   margin-left: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style: none;
 }
 
-.contact > .nav-link:not(:last-child) {
-  margin-right: 50px;
+.contact > .navigation-container:not(:last-child) {
+  margin-right: 30px;
 }
 
 .icon-email {
@@ -319,6 +325,7 @@ p {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .work-list {
@@ -347,7 +354,7 @@ p {
   display: block;
 }
 
-.work-description .title {
+.work-title {
   font-weight: 700;
   line-height: 16px;
   text-transform: uppercase;
@@ -388,7 +395,7 @@ p {
   margin-bottom: 30px;
 }
 
-.team .title {
+.team-title {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -396,7 +403,7 @@ p {
   text-align: center;
 }
 
-.team .description {
+.team-description {
   margin-bottom: 16px;
   color: var(--secondary-text-color);
   line-height: 1.18;
@@ -475,15 +482,6 @@ p {
   padding-bottom: 94px;
 }
 
-.clients .title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
-}
-
 .clients-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -495,7 +493,7 @@ p {
   list-style: none;
 }
 
-.client-link {
+.client {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -512,8 +510,8 @@ p {
   color: #afb1b8;
 }
 
-.client-link:hover,
-.client-link:focus {
+.client:hover,
+.client:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
   -webkit-transition: color var(--animation-duration) var(--animation-type), border-color var(--animation-duration) var(--animation-type);
@@ -524,7 +522,7 @@ p {
   fill: currentColor;
 }
 
-.client-type:not(:last-child) {
+.client-link:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -806,7 +804,7 @@ p {
 }
 
 /* Карточки работ */
-.example .title {
+.example-title {
   margin-bottom: 4px;
   color: var(--main-text-color);
   font-weight: 700;
@@ -815,7 +813,7 @@ p {
   letter-spacing: 0.06;
 }
 
-.example .description {
+.example-description {
   color: var(--secondary-text-color);
   line-height: 1.87;
 }
