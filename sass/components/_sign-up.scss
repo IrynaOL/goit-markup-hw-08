@@ -1,0 +1,50 @@
+.form-container {
+  margin-left: auto;
+}
+
+.form-input {
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: $secondary-background-color;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+  &:focus,
+  &:hover {
+    outline: none;
+    color: #ffffff;
+  }
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.form-elements {
+  display: flex;
+}
+
+.submit-button {
+  @extend %button;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  margin-left: 12px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.form-icon-footer {
+  fill: #ffffff;
+  margin-left: 10px;
+}

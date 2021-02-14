@@ -1,0 +1,3 @@
+@mixin transition($type: color) {
+  transition: $type $animation-duration $animation-type;
+}

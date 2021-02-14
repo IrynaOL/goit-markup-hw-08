@@ -1,0 +1,12 @@
+.logo {
+  font-family: $sec-font-family;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: $main-text-color;
+
+  &__style {
+    color: #2196f3;
+  }
+}

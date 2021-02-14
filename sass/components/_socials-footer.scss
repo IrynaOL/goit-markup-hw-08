@@ -1,0 +1,46 @@
+.social-footer {
+  margin-right: 93px;
+}
+
+.social-title {
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  margin-bottom: 20px;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.social-list__link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    @include transition(background-color);
+  }
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.social-list__item:not(:last-child) {
+  margin-right: 10px;
+}
