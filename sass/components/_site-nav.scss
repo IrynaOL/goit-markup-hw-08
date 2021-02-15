@@ -19,7 +19,7 @@
 
     @include transition;
 
-    &::after {
+    &.current-link::after {
       content: "";
       position: absolute;
       bottom: 0;
@@ -29,15 +29,9 @@
       height: 4px;
       border-radius: 2px;
       background-color: $accent-color;
-      opacity: 0;
+      opacity: 1;
 
       @include transition(opacity);
-    }
-
-    &::after.current-link,
-    &:hover::after,
-    &:focus::after {
-      opacity: 1;
     }
 
     &,
