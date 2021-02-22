@@ -1,5 +1,16 @@
 .header {
   border-bottom: 1px solid #ececec;
+
+  &__menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+  }
+
+  &____menu-icon {
+    fill: currentColor;
+  }
 }
 
 .header .container {
