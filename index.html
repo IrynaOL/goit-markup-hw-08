@@ -10,9 +10,9 @@
 
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header__container">
         <nav class="site-nav">
-          <a href="./index.html" class="logo"
+          <a href="./index.html" class="logo logo__header"
             ><span class="logo__style">Web</span>Studio</a
           >
           <ul class="navigation">
@@ -28,14 +28,20 @@
           </ul>
         </nav>
 
+        <button class="mobile-open-button" data-menu-button>
+          <svg class="mobile-open-icon" width="40" height="40">
+            <use href="./images/sprite.svg#icon-icon-menu"></use>
+          </svg>
+        </button>
+
         <ul class="contact">
           <li class="contact__container">
             <a href="mailto:info@devstudio.com" class="contact__link">
               <svg class="icon-email list" width="16" height="12">
                 <use href="./images/sprite.svg#icon-envelope"></use>
               </svg>
-              info@devstudio.com</a
-            >
+              info@devstudio.com
+            </a>
           </li>
           <li class="contact__container">
             <a href="tel:+380961111111" class="contact__link">
@@ -46,18 +52,67 @@
             >
           </li>
         </ul>
+      </div>
 
-        <button class="header__menu">
-          <svg class="header__menu-icon" width="40" height="40">
-            <use href="./images/sprite.svg#icon-menu-icon"></use>
+      <div class="mobile-menu" data-menu>
+        <button type="button" class="mobile-close-button" data-menu-close>
+          <svg class="mobile-close-icon" width="40" height="40">
+            <use href="./images/sprite.svg#icon-icon-cross-mark"></use>
           </svg>
         </button>
+        <ul class="mobile-menu-nav">
+          <li class="mobile-menu-nav-item">
+            <a href="./index.html" class="mobile-menu-nav-link current-link"
+              >Студия</a
+            >
+          </li>
+          <li class="mobile-menu-nav-item">
+            <a href="./portfolio.html" class="mobile-menu-nav-link"
+              >Портфолио</a
+            >
+          </li>
+          <li class="mobile-menu-nav-item">
+            <a href="" class="mobile-menu-nav-link">Контакты</a>
+          </li>
+        </ul>
+
+        <ul class="mobile-menu-contacts">
+          <li class="mobile-menu-contacts-item">
+            <a href="tel:+380961111111" class="mobile-menu-contacts-tel"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-menu-contacts-item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="mobile-menu-contacts-mail"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <div class="mobile-menu-socials-container">
+          <ul lang="en" class="mobile-menu-socials">
+            <li class="mobile-menu-socials-item">
+              <a href="" class="mobile-menu-socials-link">Instagram</a>
+            </li>
+            <li class="mobile-menu-socials-item">
+              <a href="" class="mobile-menu-socials-link">Twitter</a>
+            </li>
+            <li class="mobile-menu-socials-item">
+              <a href="" class="mobile-menu-socials-link">Facebook</a>
+            </li>
+            <li class="mobile-menu-socials-item">
+              <a href="" class="mobile-menu-socials-link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
     <main>
       <!-- Герой -->
-      <section class="hero section">
+      <!-- <section class="hero section">
         <div class="overlay">
           <h1 class="hero__title">
             Эффективные решения <br />
@@ -65,10 +120,10 @@
           </h1>
           <button class="hero__button" data-modal-open>Заказать услугу</button>
         </div>
-      </section>
+      </section> -->
 
       <!-- Наши преимущества -->
-      <section class="advantages">
+      <!-- <section class="advantages">
         <div class="container">
           <h2 class="advantages__title">Наши преимущества</h2>
           <ul class="advantages__list">
@@ -122,10 +177,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Чем мы занимаемся -->
-      <section class="work">
+      <!-- <section class="work">
         <div class="container">
           <h2 class="title-html">Чем мы занимаемся</h2>
           <ul class="work__list">
@@ -170,10 +225,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Наша команда -->
-      <section class="team">
+      <!-- <section class="team">
         <div class="container">
           <h2 class="title-html">Наша команда</h2>
           <ul class="team__list">
@@ -339,10 +394,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Наши клиенты -->
-      <section class="clients">
+      <!-- <section class="clients">
         <div class="container">
           <h2 class="title-html">Постоянные клиенты</h2>
           <ul class="clients__list">
@@ -390,10 +445,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div class="container-foot">
           <div class="address-footer">
@@ -474,9 +529,9 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
         <button class="modal-button" data-modal-close>
@@ -544,8 +599,9 @@
           <button type="button" class="form-button">Отправить</button>
         </form>
       </div>
-    </div>
+    </div> -->
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

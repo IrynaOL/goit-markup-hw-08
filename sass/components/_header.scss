@@ -1,18 +1,9 @@
-.header {
-  border-bottom: 1px solid #ececec;
-
-  &__menu {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    margin-left: auto;
-  }
-
-  &____menu-icon {
-    fill: currentColor;
-  }
-}
-
 .header .container {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
+// .header {
+//   border-bottom: 1px solid #ececec;
+// }

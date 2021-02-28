@@ -1,69 +1,114 @@
 .navigation {
   display: none;
+}
 
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
+.mobile-menu {
+  position: absolute;
+  width: 100%;
+  max-width: 480px;
+  height: 100vh;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-100%);
+  background-color: #ffffff;
+  padding: 48px 40px;
+  transition: transform $animation-duration linear;
 
-    line-height: 1.14;
+  &-nav {
     font-weight: 500;
+    font-size: 40px;
+    line-height: 1.175;
     letter-spacing: 0.02em;
 
-    &__container:not(:last-child) {
-      margin-right: 50px;
-    }
-  }
-
-  &__link {
-    display: block;
-    position: relative;
-    padding-top: 32px;
-    padding-bottom: 32px;
-
-    @include transition;
-
-    &.current-link::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      display: block;
-      width: 100%;
-      height: 4px;
-      border-radius: 2px;
-      background-color: $accent-color;
-      opacity: 1;
-
-      @include transition(opacity);
-    }
-
-    &,
-    &:visited {
-      color: $main-text-color;
-    }
-
-    &:hover,
-    &:focus {
-      color: $accent-color;
-    }
-
-    &.current-link {
-      color: $accent-color;
+    &-item:not(:last-child) {
+      padding-bottom: 32px;
     }
   }
 }
 
-.site-nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.mobile-menu .current-link {
+  color: $accent-color;
 }
 
-.site-nav .logo {
-  padding-top: 16px;
-  padding-bottom: 16px;
-  @media screen and (min-width: 768px) {
-    margin-right: 93px;
+.mobile-menu.is-open {
+  transform: translateX(-50%) translateY(0%);
+}
+
+.mobile-open-icon,
+.mobile-close-icon {
+  fill: currentColor;
+}
+
+.mobile-open-button,
+.mobile-close-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
   }
 }
+
+.mobile-close-button {
+  position: absolute;
+  top: 21px;
+  right: 25px;
+}
+// .navigation {
+//   display: flex;
+//   flex-direction: row;
+//   list-style: none;
+
+//   line-height: 1.14;
+//   font-weight: 500;
+//   letter-spacing: 0.02em;
+
+//   &__container:not(:last-child) {
+//     margin-right: 50px;
+//   }
+
+//   &__link {
+//     display: block;
+//     position: relative;
+//     padding-top: 32px;
+//     padding-bottom: 32px;
+
+//     @include transition;
+
+//     &.current-link::after {
+//       content: "";
+//       position: absolute;
+//       bottom: 0;
+//       left: 0;
+//       display: block;
+//       width: 100%;
+//       height: 4px;
+//       border-radius: 2px;
+//       background-color: $accent-color;
+//       opacity: 1;
+
+//       @include transition(opacity);
+//     }
+
+//     &:hover,
+//     &:focus {
+//       color: $accent-color;
+//     }
+
+//     &.current-link {
+//       color: $accent-color;
+//     }
+//   }
+// }
+
+// .site-nav {
+//   display: flex;
+//   flex-direction: row;
+//   align-items: center;
+// }
+
+// .site-nav .logo {
+//   margin-right: 93px;
+// }
