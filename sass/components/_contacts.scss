@@ -1,40 +1,55 @@
 .contact {
   display: none;
 }
-// .contact {
-//   display: flex;
-//   flex-direction: row;
-//   margin-left: auto;
-//   justify-content: center;
-//   align-items: center;
 
-//   list-style: none;
+@media screen and (min-width: $tablet-width) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 84px;
+    padding: 0;
+    list-style: none;
 
-//   &__link {
-//     display: flex;
-//     justify-items: center;
-//     padding-top: 32px;
-//     padding-bottom: 32px;
+    &__link {
+      display: flex;
+      padding-bottom: 10px;
 
-//     color: $secondary-text-color;
-//     font-weight: 500;
-//     line-height: 1.14;
-//     letter-spacing: 0.02em;
+      color: $secondary-text-color;
+      font-weight: 500;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
 
-//     &:hover,
-//     &:focus {
-//       color: $accent-color;
-//       @include transition;
-//     }
-//   }
+      &:hover,
+      &:focus {
+        color: $accent-color;
+        @include transition;
+      }
+    }
 
-//   &__container:not(:last-child) {
-//     margin-right: 30px;
-//   }
-// }
+    &__container:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 
-// .icon-email,
-// .icon-phone {
-//   fill: currentColor;
-//   margin-right: 10px;
-// }
+  .icon-email,
+  .icon-phone {
+    fill: currentColor;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .contact {
+    flex-direction: row;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__link {
+    justify-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
