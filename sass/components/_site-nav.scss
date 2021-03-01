@@ -49,8 +49,26 @@
     &-socials {
       display: flex;
 
-      &-item:not(:last-child) {
-        margin-right: 20px;
+      &-item {
+        display: inline-flex;
+        align-items: center;
+        position: relative;
+
+        &:not(:last-child) {
+          margin-right: 20px;
+        }
+        &:not(:last-child)::after {
+          content: "";
+          position: absolute;
+          right: -10px;
+          top: 10px;
+          width: 22px;
+          height: 0px;
+          border: 1px solid rgba(33, 33, 33, 0.2);
+          transform: rotate(90deg);
+          margin-right: -12px;
+          margin-bottom: 48px;
+        }
       }
 
       &-link {
@@ -62,21 +80,6 @@
       }
     }
   }
-
-  // .mobile-menu-socials-item::after {
-  //   content: "";
-  //   position: absolute;
-  //   bottom: 60px;
-  //   width: 22px;
-  //   height: 0px;
-  //   border: 1px solid rgba(33, 33, 33, 0.2);
-  //   transform: rotate(90deg);
-  // }
-
-  // .mobile-menu-socials-item:last-child::after {
-  //   content: "";
-  //   display: none;
-  // }
 
   .mobile-menu .current-link {
     color: $accent-color;
