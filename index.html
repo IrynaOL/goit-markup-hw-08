@@ -181,18 +181,32 @@
       </section>
 
       <!-- Чем мы занимаемся -->
-      <!-- <section class="work">
+      <section class="work">
         <div class="container">
           <h2 class="title-html">Чем мы занимаемся</h2>
           <ul class="work__list">
             <li class="work__item">
               <div class="work__container">
-                <img
-                  class="work__image"
-                  src="./images/img1.jpg"
-                  alt="Человек пишет код"
-                  width="100%"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/work/webp_work1.webp    1x,
+                      ./images/work/webp_work1@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp" />
+                  <source
+                    srcset="
+                      ./images/work/jpg_work1.jpg    1x,
+                      ./images/work/jpg_work1@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)" />
+                  <img
+                    class="work__image"
+                    src="./images/work/jpg_work1.jpg"
+                    alt="Человек пишет код"
+                /></picture>
+
                 <div class="work__description">
                   <p class="work__title">Десктопные приложения</p>
                 </div>
@@ -200,12 +214,28 @@
             </li>
             <li class="work__item">
               <div class="work__container">
-                <img
-                  class="work__image"
-                  src="./images/img2.jpg"
-                  alt="Человек с телефоном смотрит в экран"
-                  width="100%"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/work/webp_work2.webp    1x,
+                      ./images/work/webp_work2@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/work/jpg_work2.jpg    1x,
+                      ./images/work/jpg_work2@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="work__image"
+                    src="./images/work/jpg_work2.jpg"
+                    alt="Человек с телефоном смотрит в экран"
+                  />
+                </picture>
                 <div class="work__description">
                   <p class="work__title">Мобильные приложения</p>
                 </div>
@@ -213,12 +243,29 @@
             </li>
             <li class="work__item">
               <div class="work__container">
-                <img
-                  class="work__image"
-                  src="./images/img3.jpg"
-                  alt="Экран планшета с палитрой цветов"
-                  width="100%"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/work/webp_work3.webp    1x,
+                      ./images/work/webp_work3@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/work/jpg_work3.jpg    1x,
+                      ./images/work/jpg_work3@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="work__image"
+                    src="./images/work/jpg_work3.jpg"
+                    alt="Экран планшета с палитрой цветов"
+                    width="100%"
+                  />
+                </picture>
                 <div class="work__description">
                   <p class="work__title">Дизайнерские решения</p>
                 </div>
@@ -226,7 +273,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Наша команда -->
       <!-- <section class="team">
