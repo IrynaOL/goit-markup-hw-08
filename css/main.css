@@ -308,7 +308,7 @@ p {
   margin-bottom: 0px;
 }
 
-.img {
+img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -943,7 +943,7 @@ p {
 }
 
 .team__card {
-  width: 450px;
+  width: 100%;
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -952,12 +952,6 @@ p {
 
 .team__card:not(:last-child) {
   margin-bottom: 30px;
-}
-
-.team__card .img {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 @media screen and (min-width: 1200px) {
