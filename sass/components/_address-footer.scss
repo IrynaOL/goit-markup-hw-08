@@ -1,23 +1,45 @@
-.address {
-  margin-bottom: 9px;
+.address-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
 
+.address {
   color: #ffffff;
   line-height: 1.71;
   font-style: normal;
+  margin-bottom: 8px;
 }
 
 .contact-footer {
-  display: flex;
-  flex-direction: column;
   color: rgba(255, 255, 255, 0.6);
   line-height: 1.71;
-  list-style: none;
 }
 
-.tel-link {
-  margin-bottom: 9px;
+.mail-link {
+  margin-bottom: 8px;
 }
+// .address {
+//   margin-bottom: 9px;
 
-.address-footer {
-  margin-right: 70px;
-}
+//   color: #ffffff;
+//   line-height: 1.71;
+//   font-style: normal;
+// }
+
+// .contact-footer {
+//   display: flex;
+//   flex-direction: column;
+//   color: rgba(255, 255, 255, 0.6);
+//   line-height: 1.71;
+//   list-style: none;
+// }
+
+// .tel-link {
+//   margin-bottom: 9px;
+// }
+
+// .address-footer {
+//   margin-right: 70px;
+// }

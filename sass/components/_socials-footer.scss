@@ -1,5 +1,11 @@
 .social-footer {
-  margin-right: 93px;
+  margin-bottom: 60px;
+}
+
+.social-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .social-title {
@@ -14,7 +20,6 @@
 .socials {
   display: flex;
   flex-direction: row;
-  list-style: none;
 }
 
 .social-list__link {
@@ -44,3 +49,7 @@
 .social-list__item:not(:last-child) {
   margin-right: 10px;
 }
+
+// .social-footer {
+//   margin-right: 93px;
+// }
