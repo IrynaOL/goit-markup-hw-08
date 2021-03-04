@@ -1,3 +1,10 @@
+@media screen and (max-width: 1199px) {
+  .checkbox-text {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
+
 .form-label {
   display: flex;
   flex-direction: column;
@@ -105,12 +112,11 @@
 .new-checkbox {
   display: inline-block;
   cursor: pointer;
-  display: inline-block;
   width: 16px;
   height: 15px;
   border: 2px solid $main-text-color;
   border-radius: 2px;
-  margin-right: 10px;
+  margin-right: 8px;
   @include transition(border-color);
   @include transition(background-image);
 }

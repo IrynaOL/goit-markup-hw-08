@@ -72,7 +72,10 @@
   .form-footer {
     display: flex;
     flex-direction: row;
-    align-items: center;
+  }
+
+  .footer-label {
+    align-items: flex-start;
   }
 
   .form-input {

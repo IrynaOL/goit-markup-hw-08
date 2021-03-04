@@ -5,8 +5,6 @@
   position: relative;
 }
 
-@media screen and (min-width: $tablet-width) {
-  .header {
-    border-bottom: 1px solid #ececec;
-  }
+.header {
+  border-bottom: 1px solid #ececec;
 }

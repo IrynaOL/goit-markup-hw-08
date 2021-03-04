@@ -9,9 +9,9 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header__container">
         <nav class="site-nav">
-          <a href="./index.html" class="logo"
+          <a href="./index.html" class="logo logo__header"
             ><span class="logo__style">Web</span>Studio</a
           >
           <ul class="navigation">
@@ -29,14 +29,20 @@
           </ul>
         </nav>
 
+        <button class="mobile-open-button" data-menu-button>
+          <svg class="mobile-open-icon" width="40" height="40">
+            <use href="./images/sprite.svg#icon-icon-menu"></use>
+          </svg>
+        </button>
+
         <ul class="contact">
           <li class="contact__container">
             <a href="mailto:info@devstudio.com" class="contact__link">
               <svg class="icon-email list" width="16" height="12">
                 <use href="./images/sprite.svg#icon-envelope"></use>
               </svg>
-              info@devstudio.com</a
-            >
+              info@devstudio.com
+            </a>
           </li>
           <li class="contact__container">
             <a href="tel:+380961111111" class="contact__link">
@@ -45,6 +51,62 @@
               </svg>
               +38 096 111 11 11</a
             >
+          </li>
+        </ul>
+      </div>
+
+      <div class="mobile-menu" data-menu>
+        <button type="button" class="mobile-close-button" data-menu-close>
+          <svg class="mobile-close-icon" width="40" height="40">
+            <use href="./images/sprite.svg#icon-icon-cross-mark"></use>
+          </svg>
+        </button>
+
+        <!-- <div class="mobile-menu-container"> -->
+        <ul class="mobile-menu-nav">
+          <li class="mobile-menu-nav-item">
+            <a href="./index.html" class="mobile-menu-nav-link current-link"
+              >Студия</a
+            >
+          </li>
+          <li class="mobile-menu-nav-item">
+            <a href="./portfolio.html" class="mobile-menu-nav-link"
+              >Портфолио</a
+            >
+          </li>
+          <li class="mobile-menu-nav-item">
+            <a href="" class="mobile-menu-nav-link">Контакты</a>
+          </li>
+        </ul>
+
+        <ul class="mobile-menu-contacts">
+          <li class="mobile-menu-contacts-item">
+            <a href="tel:+380961111111" class="mobile-menu-contacts-tel"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-menu-contacts-item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="mobile-menu-contacts-mail"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <!-- </div> -->
+
+        <ul lang="en" class="mobile-menu-socials">
+          <li class="mobile-menu-socials-item">
+            <a href="" class="mobile-menu-socials-link">Instagram</a>
+          </li>
+          <li class="mobile-menu-socials-item">
+            <a href="" class="mobile-menu-socials-link">Twitter</a>
+          </li>
+          <li class="mobile-menu-socials-item">
+            <a href="" class="mobile-menu-socials-link">Facebook</a>
+          </li>
+          <li class="mobile-menu-socials-item">
+            <a href="" class="mobile-menu-socials-link">LinkedIn</a>
           </li>
         </ul>
       </div>
@@ -77,12 +139,19 @@
             <li class="example-item">
               <a class="example-link" href="">
                 <div class="example-overlay">
-                  <img
+                 <picture>
+                   <source srcset="./images/studio/webp_desk_технокряк.webp 1x, ./images/studio/webp_desk_технокряк@2x.webp 2x" media="(min-width: 1200px)" type="image/webp"/>
+                   <source srcset="./images/studio/jpg_desk_технокряк.jpg 1x, ./images/studio/jpg_desk_технокряк@2x.jpg 2x" media="(min-width: 1200px)"/>
+                    <source srcset="./images/studio/webp_tab_технокряк.webp 1x, ./images/studio/webp_tab_технокряк@2x.webp 2x" media="(min-width: 768px)" type="image/webp"/>
+                   <source srcset="./images/studio/jpg_tab_технокряк.jpg 1x, ./images/studio/jpg_tab_технокряк@2x.jpg 2x" media="(min-width: 768px)"/>
+                    <source srcset="./images/studio/webp_mob_технокряк.webp 1x, ./images/studio/webp_mob_технокряк@2x.webp 2x" media="(min-width: 480px)" type="image/webp"/>
+                   <source srcset="./images/studio/jpg_mob_технокряк.jpg 1x, ./images/studio/jpg_mob_технокряк@2x.jpg 2x" media="(min-width: 480px)"/>
+                    <img
                     class="example-image"
-                    src="./images/технокряк.jpg"
+                    src="./images/studio/jpg_desk_технокряк.jpg"
                     alt="Экран компьютера"
-                    width="370"
                   />
+                 </picture>
                   <div class="overlay-text">
                     <p class="overlay-text__content">
                       Технокряк это современная площадка распространения
@@ -101,12 +170,20 @@
             <li class="example-item">
               <a class="example-link" href="">
                 <div class="example-overlay">
-                  <img
+<picture> 
+  <source srcset="./images/studio/webp_desk_постер.webp 1x, ./images/studio/webp_desk_постер@2x.webp 2x" media="(min-width: 1200px)" type="image/webp"/>
+                   <source srcset="./images/studio/jpg_desk_постер.jpg 1x, ./images/studio/jpg_desk_постер@2x.jpg 2x" media="(min-width: 1200px)"/>
+                    <source srcset="./images/studio/webp_tab_постер.webp 1x, ./images/studio/webp_tab_постер@2x.webp 2x" media="(min-width: 768px)" type="image/webp"/>
+                   <source srcset="./images/studio/jpg_tab_постер.jpg 1x, ./images/studio/jpg_tab_постер@2x.jpg 2x" media="(min-width: 768px)"/>
+                    <source srcset="./images/studio/webp_mob_постер.webp 1x, ./images/studio/webp_mob_постер@2x.webp 2x" media="(min-width: 480px)" type="image/webp"/>
+                   <source srcset="./images/studio/jpg_mob_постер.jpg 1x, ./images/studio/jpg_mob_постер@2x.jpg 2x" media="(min-width: 480px)"/>
+  <img
                     class="example-image"
-                    src="./images/постер.jpg"
+                    src="./images/studio/jpg_desk_постер.jpg"
                     alt="Два баскетболиста"
-                    width="370"
                   />
+                </picture>
+                 
                   <div class="overlay-text">
                     <p class="overlay-text__content">
                       Технокряк это современная площадка распространения
@@ -127,12 +204,19 @@
             <li class="example-item">
               <a class="example-link" href="">
                 <div class="example-overlay">
-                  <img
+                  <picture>
+                    <source srcset="./images/studio/webp_desk_ресторан.webp 1x, ./images/studio/webp_desk_ресторан@2x.webp 2x" media="(min-width: 1200px)" type="image/webp"/>
+                   <source srcset="./images/studio/jpg_desk_ресторан.jpg 1x, ./images/studio/jpg_desk_ресторан@2x.jpg 2x" media="(min-width: 1200px)"/>
+                    <source srcset="./images/studio/webp_tab_ресторан.webp 1x, ./images/studio/webp_tab_ресторан@2x.webp 2x" media="(min-width: 768px)" type="image/webp"/>
+                   <source srcset="./images/studio/jpg_tab_ресторан.jpg 1x, ./images/studio/jpg_tab_ресторан@2x.jpg 2x" media="(min-width: 768px)"/>
+                    <source srcset="./images/studio/webp_mob_ресторан.webp 1x, ./images/studio/webp_mob_ресторан@2x.webp 2x" media="(min-width: 480px)" type="image/webp"/>
+                   <source srcset="./images/studio/jpg_mob_ресторан.jpg 1x, ./images/studio/jpg_mob_ресторан@2x.jpg 2x" media="(min-width: 480px)"/>
+                    <img
                     class="example-image"
-                    src="./images/ресторан.jpg"
+                    src="./images/studio/jpg_desk_ресторан.jpg"
                     alt="Лого ресторана"
-                    width="370"
                   />
+                  </picture>
                   <div class="overlay-text">
                     <p class="overlay-text__content">
                       Технокряк это современная площадка распространения
@@ -151,12 +235,19 @@
             <li class="example-item">
               <a class="example-link" href="">
                 <div class="example-overlay">
-                  <img
+                  <picture>
+                    <source srcset="./images/studio/webp_desk_проект-prime.webp 1x, ./images/studio/webp_desk_проект-prime@2x.webp 2x" media="(min-width: 1200px)" type="image/webp"/>
+                   <source srcset="./images/studio/jpg_desk_проект-prime.jpg 1x, ./images/studio/jpg_desk_проект-prime@2x.jpg 2x" media="(min-width: 1200px)"/>
+                    <source srcset="./images/studio/webp_tab_проект-prime.webp 1x, ./images/studio/webp_tab_проект-prime@2x.webp 2x" media="(min-width: 768px)" type="image/webp"/>
+                   <source srcset="./images/studio/jpg_tab_проект-prime.jpg 1x, ./images/studio/jpg_tab_проект-prime@2x.jpg 2x" media="(min-width: 768px)"/>
+                    <source srcset="./images/studio/webp_mob_проект-prime.webp 1x, ./images/studio/webp_mob_проект-prime@2x.webp 2x" media="(min-width: 480px)" type="image/webp"/>
+                   <source srcset="./images/studio/jpg_mob_проект-prime.jpg 1x, ./images/studio/jpg_mob_проект-prime@2x.jpg 2x" media="(min-width: 480px)"/>
+                    <img
                     class="example-image"
-                    src="./images/проект-prime.jpg"
+                    src="./images/studio/jpg_desk_проект-prime.jpg"
                     alt="Наушники"
-                    width="370"
                   />
+                  </picture>
                   <div class="overlay-text">
                     <p class="overlay-text__content">
                       Технокряк это современная площадка распространения
@@ -175,12 +266,19 @@
             <li class="example-item">
               <a class="example-link" href="">
                 <div class="example-overlay">
-                  <img
+                  <picture>
+                     <source srcset="./images/studio/webp_desk_проект-boxes.webp 1x, ./images/studio/webp_desk_проект-boxes@2x.webp 2x" media="(min-width: 1200px)" type="image/webp"/>
+                   <source srcset="./images/studio/jpg_desk_проект-boxes.jpg 1x, ./images/studio/jpg_desk_проект-boxes@2x.jpg 2x" media="(min-width: 1200px)"/>
+                    <source srcset="./images/studio/webp_tab_проект-boxes.webp 1x, ./images/studio/webp_tab_проект-boxes@2x.webp 2x" media="(min-width: 768px)" type="image/webp"/>
+                   <source srcset="./images/studio/jpg_tab_проект-boxes.jpg 1x, ./images/studio/jpg_tab_проект-boxes@2x.jpg 2x" media="(min-width: 768px)"/>
+                    <source srcset="./images/studio/webp_mob_проект-boxes.webp 1x, ./images/studio/webp_mob_проект-boxes@2x.webp 2x" media="(min-width: 480px)" type="image/webp"/>
+                   <source srcset="./images/studio/jpg_mob_проект-boxes.jpg 1x, ./images/studio/jpg_mob_проект-boxes@2x.jpg 2x" media="(min-width: 480px)"/>
+                    <img
                     class="example-image"
-                    src="./images/проект-boxes.jpg"
+                    src="./images/studio/jpg_desk_проект-boxes.jpg"
                     alt="Две коробки"
-                    width="370"
                   />
+                  </picture>
                   <div class="overlay-text">
                     <p class="overlay-text__content">
                       Технокряк это современная площадка распространения
@@ -199,12 +297,19 @@
             <li class="example-item">
               <a class="example-link" href="">
                 <div class="example-overlay">
-                  <img
+                  <picture>
+                     <source srcset="./images/studio/webp_desk_inspiration.webp 1x, ./images/studio/webp_desk_inspiration@2x.webp 2x" media="(min-width: 1200px)" type="image/webp"/>
+                   <source srcset="./images/studio/jpg_desk_inspiration.jpg 1x, ./images/studio/jpg_desk_inspiration@2x.jpg 2x" media="(min-width: 1200px)"/>
+                    <source srcset="./images/studio/webp_tab_inspiration.webp 1x, ./images/studio/webp_tab_inspiration@2x.webp 2x" media="(min-width: 768px)" type="image/webp"/>
+                   <source srcset="./images/studio/jpg_tab_inspiration.jpg 1x, ./images/studio/jpg_tab_inspiration@2x.jpg 2x" media="(min-width: 768px)"/>
+                    <source srcset="./images/studio/webp_mob_inspiration.webp 1x, ./images/studio/webp_mob_inspiration@2x.webp 2x" media="(min-width: 480px)" type="image/webp"/>
+                   <source srcset="./images/studio/jpg_mob_inspiration.jpg 1x, ./images/studio/jpg_mob_inspiration@2x.jpg 2x" media="(min-width: 480px)"/>
+                    <img
                     class="example-image"
-                    src="./images/inspiration.jpg"
+                    src="./images/studio/jpg_desk_inspiration.jpg"
                     alt="Монитор"
-                    width="370"
                   />
+                  </picture>
                   <div class="overlay-text">
                     <p class="overlay-text__content">
                       Технокряк это современная площадка распространения
@@ -223,12 +328,19 @@
             <li class="example-item">
               <a class="example-link" href="">
                 <div class="example-overlay">
-                  <img
+                  <picture>
+                     <source srcset="./images/studio/webp_desk_издание.webp 1x, ./images/studio/webp_desk_издание@2x.webp 2x" media="(min-width: 1200px)" type="image/webp"/>
+                   <source srcset="./images/studio/jpg_desk_издание.jpg 1x, ./images/studio/jpg_desk_издание@2x.jpg 2x" media="(min-width: 1200px)"/>
+                    <source srcset="./images/studio/webp_tab_издание.webp 1x, ./images/studio/webp_tab_издание@2x.webp 2x" media="(min-width: 768px)" type="image/webp"/>
+                   <source srcset="./images/studio/jpg_tab_издание.jpg 1x, ./images/studio/jpg_tab_издание@2x.jpg 2x" media="(min-width: 768px)"/>
+                    <source srcset="./images/studio/webp_mob_издание.webp 1x, ./images/studio/webp_mob_издание@2x.webp 2x" media="(min-width: 480px)" type="image/webp"/>
+                   <source srcset="./images/studio/jpg_mob_издание.jpg 1x, ./images/studio/jpg_mob_издание@2x.jpg 2x" media="(min-width: 480px)"/>
+                    <img
                     class="example-image"
-                    src="./images/издание.jpg"
+                    src="./images/studio/jpg_desk_издание.jpg"
                     alt="Журнал"
-                    width="370"
                   />
+                  </picture>
                   <div class="overlay-text">
                     <p class="overlay-text__content">
                       Технокряк это современная площадка распространения
@@ -247,12 +359,19 @@
             <li class="example-item">
               <a class="example-link" href="">
                 <div class="example-overlay">
-                  <img
+                  <picture>
+                    <source srcset="./images/studio/webp_desk_проект-lab.webp 1x, ./images/studio/webp_desk_проект-lab@2x.webp 2x" media="(min-width: 1200px)" type="image/webp"/>
+                   <source srcset="./images/studio/jpg_desk_проект-lab.jpg 1x, ./images/studio/jpg_desk_проект-lab@2x.jpg 2x" media="(min-width: 1200px)"/>
+                    <source srcset="./images/studio/webp_tab_проект-lab.webp 1x, ./images/studio/webp_tab_проект-lab@2x.webp 2x" media="(min-width: 768px)" type="image/webp"/>
+                   <source srcset="./images/studio/jpg_tab_проект-lab.jpg 1x, ./images/studio/jpg_tab_проект-lab@2x.jpg 2x" media="(min-width: 768px)"/>
+                    <source srcset="./images/studio/webp_mob_проект-lab.webp 1x, ./images/studio/webp_mob_проект-lab@2x.webp 2x" media="(min-width: 480px)" type="image/webp"/>
+                   <source srcset="./images/studio/jpg_mob_проект-lab.jpg 1x, ./images/studio/jpg_mob_проект-lab@2x.jpg 2x" media="(min-width: 480px)"/>
+                    <img
                     class="example-image"
-                    src="./images/проект-lab.jpg"
+                    src="./images/studio/jpg_desk_проект-lab.jpg"
                     alt="Этикетка"
-                    width="370"
                   />
+                  </picture>
                   <div class="overlay-text">
                     <p class="overlay-text__content">
                       Технокряк это современная площадка распространения
@@ -271,13 +390,19 @@
             <li class="example-item">
               <a class="example-link" href="">
                 <div class="example-overlay">
-                  <img
+                  <picture>
+                    <source srcset="./images/studio/webp_desk_growing-business.webp 1x, ./images/studio/webp_desk_growing-business@2x.webp 2x" media="(min-width: 1200px)" type="image/webp"/>
+                   <source srcset="./images/studio/jpg_desk_growing-business.jpg 1x, ./images/studio/jpg_desk_growing-business@2x.jpg 2x" media="(min-width: 1200px)"/>
+                    <source srcset="./images/studio/webp_tab_growing-business.webp 1x, ./images/studio/webp_tab_growing-business@2x.webp 2x" media="(min-width: 768px)" type="image/webp"/>
+                   <source srcset="./images/studio/jpg_tab_growing-business.jpg 1x, ./images/studio/jpg_tab_growing-business@2x.jpg 2x" media="(min-width: 768px)"/>
+                    <source srcset="./images/studio/webp_mob_growing-business.webp 1x, ./images/studio/webp_mob_growing-business@2x.webp 2x" media="(min-width: 480px)" type="image/webp"/>
+                   <source srcset="./images/studio/jpg_mob_growing-business.jpg 1x, ./images/studio/jpg_mob_growing-business@2x.jpg 2x" media="(min-width: 480px)"/>
+                    <img
                     class="example-image"
-                    src="./images/growing-business.jpg"
-                    alt="Рука печатает на
-              ноутбуке"
-                    width="370"
+                    src="./images/studio/jpg_desk_growing-business.jpg"
+                    alt="Рука печатает на ноутбуке"
                   />
+                  </picture>
                   <div class="overlay-text">
                     <p class="overlay-text__content">
                       Технокряк это современная площадка распространения
@@ -298,87 +423,90 @@
       </section>
     </main>
 
-    <footer class="footer">
+   <footer class="footer">
       <div class="container">
         <div class="container-foot">
-          <div class="address-footer">
-            <a href="./index.html" class="logo">
-              <span class="logo__style">Web</span>Studio
-            </a>
-            <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
-            <ul class="contact-footer">
-              <li class="tel-link">info@example.com</li>
-              <li class="mail-link">+38 099 111 11 11</li>
-            </ul>
-          </div>
-          <div class="social-footer">
-            <ul class="social-list">
-              <p class="social-title">присоединяйтесь</p>
-              <div class="socials">
-                <li class="social-list__item">
-                  <a href="" class="social-list__link">
-                    <svg class="social-icon">
-                      <use
-                        href="./images/sprite.svg#icon-instagram-icon-footer"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-list__item">
-                  <a href="" class="social-list__link">
-                    <svg class="social-icon">
-                      <use
-                        href="./images/sprite.svg#icon-twitter-icon-footer"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-list__item">
-                  <a href="" class="social-list__link">
-                    <svg class="social-icon">
-                      <use
-                        href="./images/sprite.svg#icon-facebook-icon-footer"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-list__item">
-                  <a href="" class="social-list__link">
-                    <svg class="social-icon">
-                      <use
-                        href="./images/sprite.svg#icon-linkedin-icon-footer"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-              </div>
-            </ul>
+          <div class="address-socials">
+            <div class="address-footer">
+              <a href="./index.html" class="logo">
+                <span class="logo__style">Web</span>Studio
+              </a>
+              <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
+              <ul class="contact-footer">
+                <li class="mail-link">info@example.com</li>
+                <li class="tel-link">+38 099 111 11 11</li>
+              </ul>
+            </div>
+            <div class="social-footer">
+              <ul class="social-list">
+                <p class="social-title">присоединяйтесь</p>
+                <div class="socials">
+                  <li class="social-list__item">
+                    <a href="" class="social-list__link">
+                      <svg class="social-icon">
+                        <use
+                          href="./images/sprite.svg#icon-instagram-icon-footer"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list__item">
+                    <a href="" class="social-list__link">
+                      <svg class="social-icon">
+                        <use
+                          href="./images/sprite.svg#icon-twitter-icon-footer"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list__item">
+                    <a href="" class="social-list__link">
+                      <svg class="social-icon">
+                        <use
+                          href="./images/sprite.svg#icon-facebook-icon-footer"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list__item">
+                    <a href="" class="social-list__link">
+                      <svg class="social-icon">
+                        <use
+                          href="./images/sprite.svg#icon-linkedin-icon-footer"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </div>
+              </ul>
+            </div>
           </div>
 
-          <div class="form-container">
-            <form class="form">
-              <label class="footer-label" for="email">
-                <p class="social-title">Подпишитесь на рассылку</p>
-                <div class="form-elements">
-                  <input
-                    class="form-input"
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="E-mail"
-                  />
-                  <button class="submit-button" type="submit">
-                    Подписаться
-                    <svg class="form-icon-footer" width="24" height="24">
-                      <use href="./images/sprite.svg#icon-icon-send"></use>
-                    </svg>
-                  </button>
-                </div>
-              </label>
-            </form>
-          </div>
+          <!-- <div class="form-container"> -->
+          <form class="form-footer">
+            <label class="footer-label" for="email">
+              <p class="social-title">Подпишитесь на рассылку</p>
+              <div class="form-elements">
+              <input
+                class="form-input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="submit-button" type="submit">
+              Подписаться
+              <svg class="form-icon-footer" width="24" height="24">
+                <use href="./images/sprite.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+            </div>
+          </form>
+          <!-- </div> -->
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

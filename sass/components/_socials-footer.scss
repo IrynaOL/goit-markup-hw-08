@@ -52,3 +52,9 @@
 .social-list__item:not(:last-child) {
   margin-right: 10px;
 }
+
+@media screen and (min-width: $desktop-width) {
+  .social-footer {
+    padding: 0;
+  }
+}
