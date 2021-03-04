@@ -20,8 +20,22 @@
   align-items: center;
 }
 
-// .container-foot {
-//   display: flex;
-//   flex-direction: row;
-//   align-items: baseline;
-// }
+@media screen and (min-width: $tablet-width) and (max-width: 1199px) {
+  .container-foot {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .container-foot {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}

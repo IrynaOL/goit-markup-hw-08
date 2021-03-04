@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 60px;
+  padding-bottom: 60px;
 }
 
 .address {
@@ -20,26 +20,32 @@
 .mail-link {
   margin-bottom: 8px;
 }
-// .address {
-//   margin-bottom: 9px;
 
-//   color: #ffffff;
-//   line-height: 1.71;
-//   font-style: normal;
-// }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .address-footer {
+    margin-right: 165px;
+  }
 
-// .contact-footer {
-//   display: flex;
-//   flex-direction: column;
-//   color: rgba(255, 255, 255, 0.6);
-//   line-height: 1.71;
-//   list-style: none;
-// }
+  .address-socials {
+    display: flex;
+    align-items: baseline;
+    margin: auto;
+  }
+}
 
-// .tel-link {
-//   margin-bottom: 9px;
-// }
+@media screen and (min-width: $desktop-width) {
+  .contact-footer {
+    display: flex;
+    flex-direction: column;
+  }
 
-// .address-footer {
-//   margin-right: 70px;
-// }
+  .address-footer {
+    display: block;
+    margin-right: 70px;
+  }
+
+  .address-socials {
+    display: flex;
+    align-items: baseline;
+  }
+}
