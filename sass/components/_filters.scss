@@ -49,6 +49,7 @@
     flex-wrap: nowrap;
     justify-content: center;
     margin-bottom: 40px;
+    padding-bottom: 15px;
 
     & .filter-button.current {
       background-color: $accent-color;
@@ -57,10 +58,6 @@
 
     &-item:not(:last-child) {
       margin-right: 8px;
-    }
-
-    &-item:nth-child(-n + 3) {
-      padding-bottom: 15px;
     }
   }
 }
