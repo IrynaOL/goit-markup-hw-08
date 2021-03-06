@@ -825,6 +825,7 @@ img {
 .advantages__list__title {
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
   line-height: 1.14;
   font-size: 14px;
   text-transform: uppercase;
@@ -876,6 +877,9 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .advantages__list__title {
+    text-align: left;
   }
   .advantages__box {
     max-width: 354px;

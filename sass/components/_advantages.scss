@@ -9,6 +9,7 @@
   &__list__title {
     font-weight: 700;
     text-transform: uppercase;
+    text-align: center;
     line-height: 1.14;
     font-size: 14px;
     text-transform: uppercase;
@@ -51,6 +52,10 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+
+      &__title {
+        text-align: left;
+      }
     }
 
     &__box {
